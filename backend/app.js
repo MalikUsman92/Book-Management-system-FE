@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { DBconnect } = require('./database/DBCon.js');
 
 const app = express();
 
@@ -14,6 +15,9 @@ app.get ('/', (req,res)=>{
     res.send("app is in working condotion")
 })
 
+DBconnect();
+
 app.listen(PORT, () => {
     console.log(`Server listening at port http://localhost:${PORT}`);
 });
+
