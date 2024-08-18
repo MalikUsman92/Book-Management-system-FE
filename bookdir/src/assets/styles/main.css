@@ -1,0 +1,31 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #181818; /* Dark background to match Netflix theme */
+  }
+  
+  .main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #202020; /* Slightly lighter dark background for contrast */
+  }
+  
+  .main img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Adjusted height for a more striking image */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  .main h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    color: #e5e5e5; /* Light gray text for contrast */
+  }
+
+  .main p {
+    color: #e5e5e5; /* Light gray text for contrast */
+  }
+  

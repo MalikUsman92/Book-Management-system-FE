@@ -1,11 +1,15 @@
 import './App.css';
 import React from 'react';
-import Main from './layouts/main'
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/appRoutes';
+
 
 
 function App() {
   return (
-    <Main />
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 

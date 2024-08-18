@@ -1,0 +1,54 @@
+.header {
+    background-color: #141414; /* Dark background similar to Netflix */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* For pseudo-element */
+  }
+  
+  .header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    margin: 0 15px;
+  }
+  
+  .header nav ul li button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px; /* Rounded corners for buttons */
+  }
+  
+  .header nav ul li button.login {
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+  }
+  
+  .header nav ul li button.register {
+    background-color: #333; /* Darker background for register button */
+    color: #fff;
+  }
+  
+  .header nav ul li button:hover {
+    opacity: 0.8;
+  }
+  
+  .header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Thickness of the line */
+    background-color: rgba(255, 255, 255, 0.3); /* Thin, semi-transparent white line */
+  }
+  
